@@ -43,7 +43,7 @@ a{color:inherit}
 .hero-panel{padding:32px 34px;background:linear-gradient(135deg,#fbf6f6,#fff 62%);border-left:4px solid var(--wine);margin-bottom:30px}
 .hero-panel .eyebrow{margin-bottom:9px}
 .hero-panel h1{font-size:clamp(27px,3.4vw,39px);margin-bottom:12px}
-.hero-panel p{max-width:740px;color:#5d6875;margin-bottom:0}
+.hero-panel p{max-width:85vw;color:#5d6875;margin-bottom:0}
 .quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:24px 0}
 .info-card{padding:20px;border:1px solid var(--line);border-radius:5px;background:#fff}
 .info-card h3{margin:0 0 8px;font-size:16px;color:#313b48}
