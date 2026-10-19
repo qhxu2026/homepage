@@ -1,0 +1,83 @@
+@charset "UTF-8";
+:root{--wine:#8f1027;--wine-deep:#790b20;--wine-light:#a51b32;--gold:#f3b93f;--ink:#262d36;--body:#4c5664;--muted:#7c8795;--line:#e7e9ed;--soft:#f7f8fa}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Arial,"Microsoft YaHei","PingFang SC",sans-serif;color:var(--ink)}
+a{color:inherit}
+.shell-body{height:100vh;height:100dvh;overflow:hidden}
+.site-shell{display:flex;height:100%;width:100%;overflow:hidden}
+.sidebar{position:relative;z-index:2;width:300px;min-width:300px;height:100%;display:flex;flex-direction:column;background:var(--wine);color:#fff;overflow:hidden}
+.identity{flex-shrink:0;height:150px;background:var(--wine);color:#fff;text-align:center;padding:8px 12px 10px}
+.logo-link{display:flex;align-items:center;justify-content:center;height:59px;margin:0 auto 10px;background:transparent;max-width:276px}
+.school-logo{display:block;width:100%;max-width:276px;max-height:56px;object-fit:contain}
+.school-unit{display:block;color:inherit;text-decoration:none;font-size:15px;font-weight:700;line-height:1.6;white-space:nowrap}
+.school-unit span,.group-name span{font-weight:600}
+.group-name{display:block;color:inherit;text-decoration:none;margin-top:8px;font-size:15px;font-weight:700;line-height:1.4;white-space:nowrap}
+.main-nav{display:flex;flex-direction:column;padding:8px 0 8px;gap:2px;flex:1}
+.nav-item{position:relative;display:flex;align-items:center;min-height:56px;padding:0 40px;gap:12px;color:rgba(255,255,255,.94);transition:background .18s}
+.nav-item:before{content:"";position:absolute;left:0;top:13px;bottom:13px;width:4px;background:transparent}
+.nav-item:hover{background:rgba(255,255,255,.08)}
+.nav-item.active{background:rgba(255,255,255,.09)}
+.nav-item.active:before{background:var(--gold)}
+.nav-item svg{width:25px;height:25px;flex:0 0 25px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.nav-item a{text-decoration:none;line-height:1.2;white-space:nowrap}
+.nav-cn{font-size:18px}
+.nav-en{font-size:17px;font-weight:400;opacity:.94}
+.sidebar-footer{margin-top:auto;padding:0 0 12px;text-align:center;flex-shrink:0;color:#f4d9de}
+.campus-line{display:block;width:100%;height:45px;object-fit:cover;opacity:.65;filter:brightness(1.25)}
+.footer-school{font-family:"Songti SC",SimSun,serif;font-size:12px;font-weight:700;letter-spacing:1px;margin-top:3px}
+.footer-en{font-size:6px;letter-spacing:.65px;opacity:.85;margin-top:2px}
+.content-panel{flex:1;min-width:0;height:100%;overflow:hidden;background:#fff}
+.content-frame{width:100%;height:100%;display:block;border:0;background:#fff}
+.page{max-width:1200px;margin:0 auto;padding:42px clamp(22px,4.2vw,64px) 24px;min-height:100%;font-size:15px;line-height:1.8}
+.home-banner{display:block;width:100%;height:auto;margin:0 0 28px;border-radius:4px}
+.page-header{padding:0 0 25px;border-bottom:1px solid var(--line);margin-bottom:28px}
+.eyebrow{font-size:11px;letter-spacing:2px;color:var(--wine);font-weight:700;margin:0 0 8px}
+.page h1{font-size:32px;line-height:1.35;margin:0 0 12px;color:#242b35;font-weight:700}
+.page-header>p:last-child{margin:0;color:var(--muted)}
+.page h2{font-size:21px;line-height:1.4;margin:0 0 14px;color:#303945}
+.page h2:before{content:"";display:inline-block;width:4px;height:21px;border-radius:2px;background:var(--wine);margin-right:11px;vertical-align:-4px}
+.page p{margin-top:0}
+.lead{font-size:17px;color:#3c4857}
+.muted{color:var(--muted);font-size:13px}
+.content-section{margin:30px 0}
+.hero-panel{padding:32px 34px;background:linear-gradient(135deg,#fbf6f6,#fff 62%);border-left:4px solid var(--wine);margin-bottom:30px}
+.hero-panel .eyebrow{margin-bottom:9px}
+.hero-panel h1{font-size:clamp(27px,3.4vw,39px);margin-bottom:12px}
+.hero-panel p{max-width:740px;color:#5d6875;margin-bottom:0}
+.quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:24px 0}
+.info-card{padding:20px;border:1px solid var(--line);border-radius:5px;background:#fff}
+.info-card h3{margin:0 0 8px;font-size:16px;color:#313b48}
+.info-card p{margin:0;color:var(--muted);font-size:13px}
+.text-link{color:var(--wine);font-weight:600;text-decoration:none}
+.text-link:hover{text-decoration:underline}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0 30px}
+.stats>div{padding:17px 20px;background:#faf6f6;border:1px solid #f0e4e6;border-radius:5px}
+.stats strong{display:block;color:var(--wine);font-size:26px;line-height:1.35}
+.stats span{font-size:13px;color:var(--muted)}
+.link-row{display:flex;flex-wrap:wrap;gap:10px}
+.link-row a{display:inline-block;text-decoration:none;color:var(--wine);border:1px solid #ead4d8;padding:5px 12px;border-radius:4px;font-size:13px}
+.link-row a:hover{background:#fbf0f2}
+.publication-list{list-style:none;padding:0;margin:18px 0}
+.publication{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;padding:15px 0;border-bottom:1px solid var(--line);line-height:1.65}
+.pub-number{color:var(--wine);font-size:13px;font-weight:700;padding-top:1px}
+.publication p{margin:0;font-size:14px;color:#3d4652;overflow-wrap:anywhere}
+.publication a{color:var(--wine)}
+.course-table{width:100%;border-collapse:collapse;margin:15px 0 24px}
+.course-table th,.course-table td{text-align:left;vertical-align:top;padding:13px 14px;border-bottom:1px solid var(--line)}
+.course-table th{background:#faf6f6;color:var(--wine);font-size:13px}
+.course-table td{font-size:14px}
+.year-label{font-size:17px;font-weight:700;color:var(--wine);margin:20px 0 8px}
+.profile-block{display:flex;gap:22px;padding:22px;border:1px solid var(--line);border-radius:5px;align-items:flex-start}
+.profile-monogram{width:88px;height:88px;flex:0 0 88px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#f8e9ec;color:var(--wine);font-size:24px;font-weight:700}
+.profile-block h2:before{display:none}
+.profile-block h2{margin:0 0 6px}
+.tag{display:inline-block;margin:4px 5px 0 0;padding:3px 9px;border-radius:20px;background:#f8e9ec;color:var(--wine);font-size:12px}
+.news-list{list-style:none;padding:0;margin:0}
+.news-list li{padding:17px 0;border-bottom:1px solid var(--line)}
+.news-date{display:block;color:var(--wine);font-size:12px;font-weight:700}
+.news-list h3{font-size:16px;margin:3px 0 5px}
+.news-list p{color:var(--muted);font-size:13px;margin:0}
+.page-footer{margin-top:42px;border-top:1px solid var(--line);padding-top:15px;text-align:center;color:#929ba6;font-size:12px}
+.placeholder-note{padding:18px 20px;border:1px dashed #d9dce1;border-radius:5px;background:#fafbfc;color:#697482}
+@media(max-width:850px){.sidebar{width:255px;min-width:255px}.identity{padding-left:7px;padding-right:7px}.school-unit,.group-name{font-size:13px}.nav-item{padding:0 24px;gap:10px}.nav-cn{font-size:16px}.nav-en{font-size:15px}.page{padding:30px 23px 20px}.quick-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.sidebar{width:190px;min-width:190px}.identity{height:132px;padding-top:8px}.logo-link{height:45px}.school-logo{max-height:43px}.school-unit,.group-name{font-size:11px}.group-name{margin-top:7px}.nav-item{min-height:54px;padding:0 13px;gap:7px}.nav-item svg{width:21px;height:21px;flex-basis:21px}.nav-cn{font-size:14px}.nav-en{font-size:12px}.sidebar-footer{padding-bottom:8px}.campus-line{height:30px}.footer-school{font-size:10px}.footer-en{font-size:5px}.page{padding:24px 16px 18px}.page h1{font-size:27px}.quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.info-card{padding:14px}.info-card h3{font-size:14px}.stats{grid-template-columns:1fr}.profile-block{flex-direction:column}.course-table th,.course-table td{padding:9px 7px;font-size:12px}}
