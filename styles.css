@@ -6,13 +6,13 @@ a{color:inherit}
 .shell-body{height:100vh;height:100dvh;overflow:hidden}
 .site-shell{display:flex;height:100%;width:100%;overflow:hidden}
 .sidebar{position:relative;z-index:2;width:200px;min-width:200px;height:100%;display:flex;flex-direction:column;background:var(--wine);color:#fff;overflow:hidden}
-.identity{flex-shrink:0;height:150px;background:var(--wine);color:#fff;text-align:center;padding:8px 12px 10px}
+.identity{flex-shrink:0;height:135px;background:var(--wine);color:#fff;text-align:center;padding:8px 12px 10px}
 .logo-link{display:flex;align-items:center;justify-content:center;height:59px;margin:0 auto 10px;background:transparent;max-width:276px}
 .school-logo{display:block;width:100%;max-width:276px;max-height:56px;object-fit:contain}
 .school-unit{display:block;color:inherit;text-decoration:none;font-size:12px;font-weight:700;line-height:1.35;white-space:nowrap}
 .school-unit span,.group-name span{font-weight:600}
-.group-name{display:block;width:100%;text-align:center;color:inherit;text-decoration:none;margin:8px auto 0;font-size:12px;font-weight:700;line-height:1.3;white-space:nowrap}
-.main-nav{display:flex;flex-direction:column;padding:6px 0;gap:1.5px;flex:1;min-height:0;overflow-y:auto}
+.group-name{display:block;width:100%;text-align:center;color:inherit;text-decoration:none;margin:14px auto 0;font-size:12px;font-weight:700;line-height:1.3;white-space:nowrap}
+.main-nav{display:flex;flex-direction:column;padding:2px 0 6px;gap:1.5px;flex:1;min-height:0;overflow-y:auto}
 .nav-item{position:relative;display:flex;align-items:center;min-height:42px;padding:0 9px;gap:6px;color:rgba(255,255,255,.94);transition:background .18s}
 .nav-item:before{content:"";position:absolute;left:0;top:13px;bottom:13px;width:4px;background:transparent}
 .nav-item:hover{background:rgba(255,255,255,.08)}
@@ -80,7 +80,7 @@ a{color:inherit}
 .page-footer{margin-top:42px;border-top:1px solid var(--line);padding-top:15px;text-align:center;color:#929ba6;font-size:12px}
 .placeholder-note{padding:18px 20px;border:1px dashed #d9dce1;border-radius:5px;background:#fafbfc;color:#697482}
 @media(max-width:850px){.sidebar{width:200px;min-width:200px}.identity{padding-left:7px;padding-right:7px}.school-unit,.group-name{font-size:12px}.nav-item{min-height:42px;padding:0 9px;gap:6px}.nav-cn{font-size:12px}.nav-en{font-size:11px;margin-left:6px}.page{padding:30px 23px 20px}.quick-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.sidebar{width:200px;min-width:200px}.identity{height:132px;padding-top:8px}.logo-link{height:45px}.school-logo{max-height:43px}.school-unit,.group-name{font-size:10px}.group-name{margin-top:7px}.nav-item{min-height:40px;padding:0 9px;gap:5px}.nav-item svg{width:16px;height:16px;flex-basis:16px}.nav-cn{font-size:11px}.nav-en{font-size:9px;margin-left:5px}.sidebar-footer{padding-bottom:8px}.campus-line{height:30px}.footer-school{font-size:10px}.footer-en{font-size:5px}.page{padding:24px 16px 18px}.page h1{font-size:27px}.quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.info-card{padding:14px}.info-card h3{font-size:14px}.stats{grid-template-columns:1fr}.profile-block{flex-direction:column}.course-table th,.course-table td{padding:9px 7px;font-size:12px}}
+@media(max-width:560px){.sidebar{width:200px;min-width:200px}.identity{height:100px;padding:6px 7px}.logo-link{height:40px;margin-bottom:6px}.school-logo{max-height:38px}.school-unit,.group-name{font-size:10px}.group-name{margin-top:7px}.nav-item{min-height:40px;padding:0 9px;gap:5px}.nav-item svg{width:16px;height:16px;flex-basis:16px}.nav-cn{font-size:11px}.nav-en{font-size:9px;margin-left:5px}.sidebar-footer{padding-bottom:8px}.campus-line{height:30px}.footer-school{font-size:10px}.footer-en{font-size:5px}.page{padding:24px 16px 18px}.page h1{font-size:27px}.quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.info-card{padding:14px}.info-card h3{font-size:14px}.stats{grid-template-columns:1fr}.profile-block{flex-direction:column}.course-table th,.course-table td{padding:9px 7px;font-size:12px}}
 
 .avatar-box {
   position: absolute;
